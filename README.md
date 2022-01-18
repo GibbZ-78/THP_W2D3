@@ -4,13 +4,13 @@
 
 ### Plan du repository
 
-THP_W2D3  
+<a href="https://github.com/GibbZ-78/THP_W2D3">THP_W2D3</a>  
 |  
 ├── <a href="https://github.com/GibbZ-78/THP_W2D3/tree/main/lib">lib</a>  
-│   ├── 00_hello.rb  
-│   ├── 01_pyramids.rb  
-│   ├── 02_password.rb  
-│   └── 03_stairway.rb  
+│   ├── <a href="https://github.com/GibbZ-78/THP_W2D3/blob/main/lib/00_hello.rb">00_hello.rb</a>  
+│   ├── <a href="https://github.com/GibbZ-78/THP_W2D3/blob/main/lib/01_pyramids.rb">01_pyramids.rb</a>  
+│   ├── <a href="https://github.com/GibbZ-78/THP_W2D3/blob/main/lib/02_password.rb">02_password.rb</a>  
+│   └── <a href="https://github.com/GibbZ-78/THP_W2D3/blob/main/lib/03_stairway.rb">03_stairway.rb</a>  
 └── README.md  
   
 - 00_hello.rb : Mon premier "Hello World" en Ruby utilisant des méthodes
