@@ -6,7 +6,7 @@
 
 THP_W2D3  
 |  
-├── <a href="./tree/main/lib">lib</a>  
+├── <a href="tree/main/lib">lib</a>  
 │   ├── 00_hello.rb  
 │   ├── 01_pyramids.rb  
 │   ├── 02_password.rb  
