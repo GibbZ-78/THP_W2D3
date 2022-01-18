@@ -2,17 +2,17 @@
 
 ## 3ème jour d'apprentissage de Ruby
 
-Plan du repository
+### Plan du repository
 
-THP_W2D3
-|
-├── lib
-│   ├── 00_hello.rb
-│   ├── 01_pyramids.rb
-│   ├── 02_password.rb
-│   └── 03_stairway.rb
-└── README.md
-
+THP_W2D3  
+|  
+├── lib  
+│   ├── 00_hello.rb  
+│   ├── 01_pyramids.rb  
+│   ├── 02_password.rb  
+│   └── 03_stairway.rb  
+└── README.md  
+  
 - 00_hello.rb : Mon premier "Hello World" en Ruby utilisant des méthodes
 - 01_pyramids.rb : Deuxième programme (un peu) structuré en Ruby qui t'emmènera au temps des pyramides
 - 02_password.rb : Simulation d'un système de login et mot de passe, toujours en Ruby
