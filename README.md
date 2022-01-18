@@ -19,5 +19,17 @@
 - 03_stairway.rb : Un super jeu qui déchire en mode Q&R textuelles (ça me rappelle mon MO5 ou même mon T07)
 - README.md : le fichier que tu es en train de lire, a priori :smile:
 
+### 00_hello  
+Y'a rien à faire, sinon lancer le programme via un "ruby 00_hello.rb" pour afficher une variante de "Hello World"  
+  
+### 01_pyramids  
+Il suffit de lancer le programme et de se laisser guider par les menus et questions qui s'affichent  
+  
+### 02_password  
+Même chose que précédemment : lancer le programme via "ruby 02_password.rb" et suivez les injonctions !  
+  
+### 03_stairway  
+On reste sur la même tendance : (i) lancer un petit "ruby 03_stairway.rb" puis (ii) se laisser porter par le game :thumbsup:
+
 
 <i>Enjoy, wanderer :wink: !</i>
