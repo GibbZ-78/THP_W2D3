@@ -1,8 +1,9 @@
 #02_password.rb by Jean-Baptiste VIDAL for THP Developpeur Hiver 2022
 # Troisème programme Ruby utilisant des méthodes & Co
+# A lancer sur un terminal en plein écran pour bénéficier des "graphismes" ASCII ;-)
 
 # Inclusion de bibliothèques au besoin
-#require 'io/console' #(utile uniquement si invocation de "IO::console.getpass" & Co)
+require 'io/console' #(utile uniquement si invocation de "IO::console.getpass" pour saisie aveugle du mot de passe)
 
 # draw_marquee - Affichage de la bannière de Your Keep 2.0
 # IN  : -
@@ -50,7 +51,8 @@ def signup
   $login=gets.chomp
   puts  "#                                                #"
   print "#    4) Enter the desired password: "
-  $password=gets.chomp
+  # $password=gets.chomp
+  $password=IO::console.getpass
   puts  "#                                                #"
   puts  "##################################################"
   puts  "#                                                #"
@@ -80,7 +82,8 @@ def login
     provided_login=gets.chomp
     puts  "#                                                #"
     print "#    Password: "
-    provided_password=gets.chomp
+    # provided_password=gets.chomp
+    provided_password=IO::console.getpass
     puts  "#                                                #"
     puts  "##################################################"
     if (provided_login==$login) && (provided_password==$password)
@@ -92,7 +95,8 @@ def login
       if $attempt> 3
         deny_screen
       else
-        login
+        login # Appel récursif - Attention au branchement de retour !
+        break
       end
     end
   end
@@ -104,8 +108,14 @@ end
 # DO  : Affiche l'en-tête avec un message de bien venue
 # OUT : -
 def welcome_screen
-  draw_marquee("#{$firstname} #{$lastname} - LOGGED IN")
-  puts
+  draw_marquee("LOGGED IN USER: #{$firstname} #{$lastname}")
+  puts  "#                                                #"
+  puts  "#      Houlala ! Que voilà des informations      #"
+  puts  "#                                                #"
+  puts  "#                [TOP SECRET]                    #"
+  puts  "#                                                #"
+  puts  "##################################################"
+  puts 
   puts
 end
 
@@ -131,6 +141,7 @@ def perform
   $login=""
   $password=""
   $attempt=1
+  system "clear" # Attention à la portabilité - "clear" fonctionne uniquement sur X-terminal pas DOS
   signup
   login
   puts
